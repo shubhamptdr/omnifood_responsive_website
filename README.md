@@ -9,6 +9,11 @@ This website is built using the following technologies:
 * CSS
 * JavaScript
 
+## Video Preview
+
+https://user-images.githubusercontent.com/117558233/232275203-079480c6-566d-49bc-8b6c-fccf7e344bdb.mp4
+
+
 ## Photo Preview
 
 ![Screenshot 2023-04-16 113326](https://user-images.githubusercontent.com/117558233/232274781-04505ec8-d710-407e-96ba-064506a9ad60.png)
