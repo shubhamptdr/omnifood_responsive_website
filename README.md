@@ -2,6 +2,8 @@
 
 Omnifood is a fully responsive website that I built to enhance my web design knowledge. The website is designed to be accessible on 
 different screen sizes, including mobile devices,tablets, and desktops.
+Hosted Here: 
+https://shubhamptdr.github.io/omnifood_responsive_website/
 
 ## Tech Stack
 This website is built using the following technologies:
