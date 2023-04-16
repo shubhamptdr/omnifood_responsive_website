@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
 
     <script
       type="module"
@@ -22,20 +23,34 @@
       src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
     ></script>
 
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+    <script defer src="js/script.js"></script>
+
     <title>Omnifood</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header sticky">
+      <a href="#"></a>
       <img class="logo" src="img/omnifood-logo.png" alt="Omnifood logo" />
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a class="main-nav-list" href="#">How it works</a></li>
-          <li><a class="main-nav-list" href="#">Meals</a></li>
-          <li><a class="main-nav-list" href="#">Testimonials</a></li>
-          <li><a class="main-nav-list" href="#">Pricing</a></li>
-          <li><a class="main-nav-list nav-cta" href="#">Try for free</a></li>
+          <li><a class="main-nav-list" href="#how">How it works</a></li>
+          <li><a class="main-nav-list" href="#meals">Meals</a></li>
+          <li>
+            <a class="main-nav-list" href="#testimonials">Testimonials</a>
+          </li>
+          <li><a class="main-nav-list" href="#pricing">Pricing</a></li>
+          <li><a class="main-nav-list nav-cta" href="#cta">Try for free</a></li>
         </ul>
       </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
     </header>
 
     <main>
@@ -50,10 +65,10 @@
               eat healthy again. Tailored to your personal tastes and
               nutritional needs.
             </p>
-            <a href="#" class="btn btn--full margin-right-sm"
+            <a href="#cta" class="btn btn--full margin-right-sm"
               >Start eating well</a
             >
-            <a href="#" class="btn btn--outline">Learn more &darr;</a>
+            <a href="#how" class="btn btn--outline">Learn more &darr;</a>
             <div class="delivered-meals">
               <div class="delivered-img">
                 <img src="img/customers/customer-1.jpg" alt="customer photo" />
@@ -97,7 +112,7 @@
         </div>
       </section>
 
-      <section class="section-how">
+      <section class="section-how" id="how">
         <div class="container">
           <span class="subheading">How it works</span>
           <h2 class="heading-secondary">
@@ -163,7 +178,7 @@
         </div>
       </section>
 
-      <section class="section-meals">
+      <section class="section-meals" id="meals">
         <div class="container center-text">
           <span class="subheading">Meals</span>
           <h2 class="heading-secondary">
@@ -283,7 +298,7 @@
         </div>
       </section>
 
-      <section class="section-testimonials">
+      <section class="section-testimonials" id="testimonials">
         <div class="testimonials-container">
           <span class="subheading">Testimonials</span>
           <h2 class="heading-secondary">Once you try it, you can't go back</h2>
@@ -432,7 +447,7 @@
         </div>
       </section>
 
-      <section class="section-pricing">
+      <section class="section-pricing" id="pricing">
         <div class="container">
           <span class="subheading">Pricing</span>
           <h2 class="heading-secondary">
@@ -542,7 +557,7 @@
         </div>
       </section>
 
-      <section class="section-cta">
+      <section class="section-cta" id="cta">
         <div class="container">
           <div class="cta">
             <div class="cta-text-box">
@@ -628,7 +643,8 @@
           </ul>
 
           <p class="copyright">
-            Copyright &copy; 2027 by Omnifood, Inc. All rights reserved.
+            Copyright &copy; <span class=".year">2027</span> by Omnifood, Inc.
+            All rights reserved.
           </p>
         </div>
         <div class="address-col">
